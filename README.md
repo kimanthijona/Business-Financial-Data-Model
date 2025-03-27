@@ -18,28 +18,6 @@ We take raw business survey data and transform it into insights using machine le
 
 📈 Prediction – Estimating loan repayment probability based on daily revenue.
 
-📁 Project Structure
-
-scoring_project/
-│
-├── data/                     # Datasets
-│   ├── raw/                  # Raw survey data
-│   ├── processed/            # Cleaned and transformed data
-│
-├── src/                      # Source code
-│   ├── data/                 # Data processing scripts
-│   ├── models/               # Model training & evaluation
-│   ├── utils/                # Utility functions (logging, error handling)
-│   ├── config/               # Configuration files
-│   └── __init__.py           # Package initialization
-│
-├── notebooks/                # Jupyter notebooks for EDA & analysis
-├── logs/                     # Training logs
-├── models/                   # Saved trained models
-├── requirements.txt          # Required dependencies
-├── README.md                 # Project documentation
-└── main.py                   # Main script for running the model
-
 🛠️ Installation & Setup
 
 Clone the Repository
