@@ -2,7 +2,7 @@
 
 **Overview**
 
-Welcome to the Business Financial Data Model! This project is all about predicting the likelihood of small retail businesses repaying their loans. We use self-declared financial data collected via KoboToolbox surveys, focusing on daily sales and revenue as key indicators.
+Welcome to the Business Financial Data Model! This project is all about predicting the likelihood of small retail businesses repaying their loans. We use self-declared financial data collected via surveys, focusing on daily sales and revenue as key indicators.
 
 **How It Works**
 
