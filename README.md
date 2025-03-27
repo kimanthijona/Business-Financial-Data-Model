@@ -1,4 +1,4 @@
-*Business Financial Data Model*
+**Business Financial Data Model**
 
 🚀 Overview
 
@@ -18,33 +18,33 @@ We take raw business survey data and transform it into insights using machine le
 
 📈 Prediction – Estimating loan repayment probability based on daily revenue.
 
-🛠️ Installation & Setup
+**Installation & Setup**
 
 Clone the Repository
 
 git clone https://github.com/your-username/business-financial-data-model.git
 cd business-financial-data-model
 
-Set Up a Virtual Environment
+**Set Up a Virtual Environment**
 
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-Install Required Libraries
+**Install Required Libraries**
 
 pip install -r requirements.txt
 
 📜 Key Libraries Used
 
-Pandas – Data manipulation
+Pandas 
 
-NumPy – Numerical operations
+NumPy 
 
-Scikit-learn – Machine learning modeling
+Scikit-learn 
 
-XGBoost – Gradient boosting for prediction
+XGBoost 
 
-Matplotlib & Seaborn – Data visualization
+Matplotlib & Seaborn 
 
 ▶️ Running the Model
 
@@ -60,7 +60,7 @@ View Results – Check predictions in models/saved_models/.
 
 Target Variable: Probability of loan repayment.
 
-Key Features:
+**Key Features:**
 
 Daily sales & revenue trends 📈
 
@@ -68,7 +68,7 @@ Business operational data 🏪
 
 Other financial indicators 💰
 
-Techniques Used:
+**Techniques Used:**
 
 Logistic Regression 🤖
 
@@ -78,13 +78,9 @@ XGBoost ⚡
 
 Hyperparameter tuning 🎛️
 
-📜 License
+**License**
 
 This project is licensed under the MIT License. See LICENSE for details.
 
-🤝 Contributors
-
-Your Name - Your GitHub Profile
-
-For questions or collaborations, feel free to open an issue or reach out via email. Happy coding! 🚀
+*For questions or collaborations, feel free to open an issue or reach out via email. Happy coding!* 🚀
 
