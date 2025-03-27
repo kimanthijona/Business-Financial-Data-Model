@@ -1,0 +1,60 @@
+2025-03-27 15:35:59,808 - __main__ - INFO - Starting ML pipeline
+2025-03-27 15:35:59,819 - __main__ - INFO - Configuration loaded successfully
+2025-03-27 15:35:59,820 - __main__ - INFO - Starting data ingestion
+2025-03-27 15:35:59,837 - src.data.data_ingestion - INFO - Qualified status distribution:
+qualified_status
+1    6
+0    4
+Name: count, dtype: int64
+2025-03-27 15:35:59,837 - src.data.data_ingestion - INFO - Data loaded successfully from D:\PesaJoy\Scoring\data/raw/survey_data.csv
+2025-03-27 15:35:59,837 - src.data.data_ingestion - INFO - Data shape: (10, 18)
+2025-03-27 15:35:59,840 - src.data.data_ingestion - INFO - Target variable info:
+count    10.000000
+mean      0.600000
+std       0.516398
+min       0.000000
+25%       0.000000
+50%       1.000000
+75%       1.000000
+max       1.000000
+Name: qualified_status, dtype: float64
+2025-03-27 15:35:59,842 - __main__ - INFO - Data loaded successfully with shape: (10, 18)
+2025-03-27 15:35:59,842 - __main__ - INFO - Starting data validation
+2025-03-27 15:35:59,847 - src.data.data_validation - INFO - Range validation completed for column age
+2025-03-27 15:35:59,847 - src.data.data_validation - INFO - Range validation completed for column years_experience
+2025-03-27 15:35:59,848 - src.data.data_validation - INFO - Range validation completed for column years_location
+2025-03-27 15:35:59,848 - src.data.data_validation - INFO - Range validation completed for column weekday_hours
+2025-03-27 15:35:59,849 - src.data.data_validation - INFO - Range validation completed for column weekend_hours
+2025-03-27 15:35:59,849 - src.data.data_validation - INFO - Range validation completed for column total_inventory
+2025-03-27 15:35:59,849 - src.data.data_validation - INFO - Range validation completed for column monthly_purchases
+2025-03-27 15:35:59,849 - src.data.data_validation - INFO - Range validation completed for column daily_sales
+2025-03-27 15:35:59,850 - src.data.data_validation - INFO - Range validation completed for column monthly_revenue
+2025-03-27 15:35:59,850 - src.data.data_validation - INFO - Range validation completed for column total_employees
+2025-03-27 15:35:59,850 - src.data.data_validation - INFO - Categorical validation completed for column business_type
+2025-03-27 15:35:59,850 - src.data.data_validation - INFO - Categorical validation completed for column location_type
+2025-03-27 15:35:59,850 - src.data.data_validation - INFO - Categorical validation completed for column ownership_type
+2025-03-27 15:35:59,850 - src.data.data_validation - INFO - Categorical validation completed for column education_level
+2025-03-27 15:35:59,851 - src.data.data_validation - INFO - Categorical validation completed for column customer_segment
+2025-03-27 15:35:59,851 - src.data.data_validation - INFO - Categorical validation completed for column payment_methods
+2025-03-27 15:35:59,851 - src.data.data_validation - INFO - Categorical validation completed for column business_registration
+2025-03-27 15:35:59,851 - src.data.data_validation - INFO - Data validation completed successfully
+2025-03-27 15:35:59,851 - __main__ - INFO - Data validation completed successfully
+2025-03-27 15:35:59,851 - __main__ - INFO - Starting data transformation
+2025-03-27 15:35:59,861 - src.data.data_transformation - INFO - Missing values handled successfully
+2025-03-27 15:35:59,864 - src.data.data_transformation - INFO - Scaled 10 numeric features
+2025-03-27 15:35:59,865 - src.data.data_transformation - INFO - Encoded categorical feature: business_type
+2025-03-27 15:35:59,866 - src.data.data_transformation - INFO - Encoded categorical feature: location_type
+2025-03-27 15:35:59,866 - src.data.data_transformation - INFO - Encoded categorical feature: ownership_type
+2025-03-27 15:35:59,867 - src.data.data_transformation - INFO - Encoded categorical feature: education_level
+2025-03-27 15:35:59,867 - src.data.data_transformation - INFO - Encoded categorical feature: customer_segment
+2025-03-27 15:35:59,868 - src.data.data_transformation - INFO - Encoded categorical feature: payment_methods
+2025-03-27 15:35:59,868 - src.data.data_transformation - INFO - Encoded categorical feature: business_registration
+2025-03-27 15:35:59,868 - __main__ - INFO - Data transformation completed successfully
+2025-03-27 15:35:59,869 - __main__ - INFO - Starting feature engineering
+2025-03-27 15:35:59,869 - __main__ - INFO - Creating target variable
+2025-03-27 15:35:59,870 - src.data.automated_feature_engineering - INFO - Target variable created successfully
+2025-03-27 15:35:59,872 - __main__ - INFO - Generating automated features
+2025-03-27 15:35:59,960 - src.data.automated_feature_engineering - INFO - Generated 50 features automatically
+2025-03-27 15:35:59,960 - __main__ - INFO - Generated 50 automated features
+2025-03-27 15:35:59,961 - __main__ - INFO - Combining original and automated features
+2025-03-27 15:35:59,962 - __main__ - INFO - Total number of features: 69

@@ -1,0 +1,38 @@
+2025-03-27 17:47:29,597 - __main__ - INFO - Starting ML pipeline
+2025-03-27 17:47:29,607 - __main__ - INFO - Configuration loaded successfully
+2025-03-27 17:47:29,607 - __main__ - INFO - Starting data ingestion
+2025-03-27 17:47:29,636 - __main__ - INFO - Data loaded successfully with shape: (10, 18)
+2025-03-27 17:47:29,637 - __main__ - INFO - Starting data validation
+2025-03-27 17:47:29,650 - __main__ - INFO - Data validation completed successfully
+2025-03-27 17:47:29,650 - __main__ - INFO - Starting data transformation
+2025-03-27 17:47:29,660 - __main__ - INFO - Data transformation completed successfully
+2025-03-27 17:47:29,661 - __main__ - INFO - Starting feature engineering
+2025-03-27 17:47:29,661 - __main__ - INFO - Creating target variable
+2025-03-27 17:47:29,661 - src.data.automated_feature_engineering - INFO - Target variable created successfully
+2025-03-27 17:47:29,662 - __main__ - INFO - Generating automated features
+2025-03-27 17:47:29,747 - src.data.automated_feature_engineering - INFO - Generated 50 features automatically
+2025-03-27 17:47:29,747 - __main__ - INFO - Generated 50 automated features
+2025-03-27 17:47:29,748 - __main__ - INFO - Combining original and automated features
+2025-03-27 17:47:29,748 - __main__ - INFO - Total number of features: 69
+2025-03-27 17:47:33,826 - src.data.automated_feature_engineering - INFO - Correlation matrix plot saved to D:\PesaJoy\Business_Financial_data_Model\data/features\plots\correlation_matrix.png
+2025-03-27 17:47:33,827 - __main__ - INFO - Feature list saved to D:\PesaJoy\Business_Financial_data_Model\data/features/feature_list.txt
+2025-03-27 17:47:33,827 - __main__ - INFO - Starting model training
+2025-03-27 17:47:42,268 - src.models.model_trainer - INFO - Best score: 0.9167
+2025-03-27 17:47:42,269 - src.models.model_trainer - INFO - Best parameters: {'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-03-27 17:47:42,272 - src.models.model_trainer - INFO - Model and feature list saved to D:\PesaJoy\Business_Financial_data_Model\models/saved_models
+2025-03-27 17:47:42,273 - __main__ - INFO - Model training completed successfully
+2025-03-27 17:47:42,273 - __main__ - INFO - Generating model explanations
+2025-03-27 17:47:42,273 - __main__ - INFO - Generating SHAP explanations
+2025-03-27 17:47:42,794 - __main__ - INFO - Generating LIME explanations
+2025-03-27 17:47:43,170 - __main__ - INFO - Model explanations generated successfully
+2025-03-27 17:47:43,547 - __main__ - INFO - Feature importance plot saved successfully
+2025-03-27 17:47:43,547 - __main__ - INFO - Starting model evaluation
+2025-03-27 17:47:43,557 - src.models.model_evaluation - INFO - Model loaded successfully from D:\PesaJoy\Business_Financial_data_Model\models/saved_models\random_forest_model.pkl
+2025-03-27 17:47:43,558 - src.models.model_evaluation - INFO - Encoders loaded successfully from D:\PesaJoy\Business_Financial_data_Model\models/saved_models\random_forest_encoders.pkl
+2025-03-27 17:47:43,570 - src.models.model_evaluation - INFO - Performance metrics calculated successfully
+2025-03-27 17:47:43,719 - src.models.model_evaluation - INFO - Confusion matrix plot saved for random_forest
+2025-03-27 17:47:43,846 - src.models.model_evaluation - INFO - ROC curve plot saved for random_forest
+2025-03-27 17:47:43,856 - __main__ - INFO - Model evaluation completed successfully
+2025-03-27 17:47:43,856 - __main__ - INFO - Starting model prediction
+2025-03-27 17:47:43,857 - src.models.model_prediction - ERROR - Error making predictions: Model not loaded
+2025-03-27 17:47:43,857 - __main__ - ERROR - Error in ML pipeline: Failed to make predictions: Model not loaded

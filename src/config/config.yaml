@@ -1,0 +1,112 @@
+data:
+  raw_data_path: "data/raw/survey_data.csv"
+  processed_data_path: "data/processed/preprocessed_survey_data.csv"
+  target_column: "target"  # Binary target based on daily sales
+  features_path: "features.csv"
+  daily_sales_threshold: 5000  # Threshold for good/bad classification
+
+data_transformation:
+  numeric_columns:
+    - "age"
+    - "years_experience"
+    - "years_location"
+    - "weekday_hours"
+    - "weekend_hours"
+    - "total_inventory"
+    - "monthly_purchases"
+    - "daily_sales"
+    - "monthly_revenue"
+    - "total_employees"
+  categorical_columns:
+    - "business_type"
+    - "location_type"
+    - "ownership_type"
+    - "education_level"
+    - "customer_segment"
+    - "payment_methods"
+    - "business_registration"
+
+feature_engineering:
+  age:
+    birth_date_column: "birth_date"
+  
+  business_operation:
+    experience_column: "years_experience"
+    location_column: "years_location"
+  
+  business_hours:
+    weekday_hours_column: "weekday_hours"
+    weekend_hours_column: "weekend_hours"
+  
+  inventory:
+    total_inventory_column: "total_inventory"
+    monthly_purchases_column: "monthly_purchases"
+  
+  customer_segments:
+    low_income_column: "low_income_customers"
+    medium_income_column: "medium_income_customers"
+    high_income_column: "high_income_customers"
+
+model_config:
+  random_forest:
+    n_estimators: [100, 200, 300]
+    max_depth: [10, 20, 30, None]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+  
+  gradient_boosting:
+    n_estimators: [100, 200, 300]
+    learning_rate: [0.01, 0.1, 0.3]
+    max_depth: [3, 4, 5]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+  
+  logistic_regression:
+    C: [0.1, 1, 10]
+    max_iter: [1000]
+    solver: ['lbfgs']
+  
+  svm:
+    C: [0.1, 1, 10]
+    kernel: ['rbf', 'linear']
+    gamma: ['scale', 'auto']
+  
+  knn:
+    n_neighbors: [3, 5, 7]
+    weights: ['uniform', 'distance']
+    metric: ['euclidean', 'manhattan']
+  
+  decision_tree:
+    max_depth: [3, 4, 5, None]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+  
+  naive_bayes:
+    var_smoothing: [1e-9, 1e-8, 1e-7]
+  
+  neural_network:
+    hidden_layer_sizes: [(50,), (100,), (50, 25)]
+    activation: ['relu', 'tanh']
+    alpha: [0.0001, 0.001]
+    max_iter: [1000]
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  scoring: "accuracy"
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+  confidence_threshold: 0.5
+  batch_size: 1000
+
+paths:
+  models_dir: "models/saved_models"
+  evaluation_dir: "models/evaluation"
+  logs_dir: "logs"
+  features_dir: "data/features" 

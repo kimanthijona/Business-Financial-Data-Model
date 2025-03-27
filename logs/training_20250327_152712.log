@@ -1,0 +1,20 @@
+2025-03-27 15:27:12,248 - __main__ - INFO - Starting ML pipeline
+2025-03-27 15:27:12,262 - __main__ - INFO - Configuration loaded successfully
+2025-03-27 15:27:12,263 - __main__ - INFO - Starting data ingestion
+2025-03-27 15:27:12,279 - __main__ - INFO - Data loaded successfully with shape: (10, 18)
+2025-03-27 15:27:12,280 - __main__ - INFO - Starting data validation
+2025-03-27 15:27:12,295 - __main__ - INFO - Data validation completed successfully
+2025-03-27 15:27:12,295 - __main__ - INFO - Starting data transformation
+2025-03-27 15:27:12,307 - __main__ - INFO - Data transformation completed successfully
+2025-03-27 15:27:12,307 - __main__ - INFO - Starting feature engineering
+2025-03-27 15:27:12,308 - __main__ - INFO - Creating target variable
+2025-03-27 15:27:12,308 - src.data.automated_feature_engineering - INFO - Target variable created successfully
+2025-03-27 15:27:12,309 - __main__ - INFO - Generating automated features
+2025-03-27 15:27:12,409 - src.data.automated_feature_engineering - INFO - Generated 50 features automatically
+2025-03-27 15:27:12,409 - __main__ - INFO - Generated 50 automated features
+2025-03-27 15:27:12,410 - __main__ - INFO - Combining original and automated features
+2025-03-27 15:27:12,411 - __main__ - INFO - Total number of features: 69
+2025-03-27 15:27:17,654 - src.data.automated_feature_engineering - INFO - Correlation matrix plot saved to D:\PesaJoy\Scoring\data/features\plots\correlation_matrix.png
+2025-03-27 15:27:17,655 - __main__ - INFO - Feature list saved to D:\PesaJoy\Scoring\data/features/feature_list.txt
+2025-03-27 15:27:17,655 - __main__ - INFO - Starting model training
+2025-03-27 15:27:17,657 - src.models.model_trainer - INFO - Training random_forest...

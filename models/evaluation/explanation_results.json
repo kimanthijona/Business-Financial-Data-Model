@@ -1,0 +1,409 @@
+{
+    "shap": {
+        "mean_abs_shap": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0154,
+                0.0154
+            ],
+            [
+                0.013000000000000001,
+                0.012999999999999998
+            ],
+            [
+                0.009000000000000001,
+                0.009000000000000001
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0044,
+                0.0044
+            ],
+            [
+                0.023200000000000002,
+                0.023200000000000002
+            ],
+            [
+                0.009000000000000001,
+                0.009000000000000001
+            ],
+            [
+                0.013399999999999999,
+                0.013399999999999999
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0088,
+                0.0088
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0054,
+                0.0054
+            ],
+            [
+                0.0048000000000000004,
+                0.0048000000000000004
+            ],
+            [
+                0.0042,
+                0.004200000000000001
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.015700000000000002,
+                0.015700000000000002
+            ],
+            [
+                0.0128,
+                0.0128
+            ],
+            [
+                0.009000000000000001,
+                0.009000000000000001
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.009400000000000002,
+                0.009400000000000002
+            ],
+            [
+                0.019999999999999997,
+                0.019999999999999997
+            ],
+            [
+                0.0048000000000000004,
+                0.0048000000000000004
+            ],
+            [
+                0.021200000000000004,
+                0.021200000000000004
+            ],
+            [
+                0.009600000000000001,
+                0.009600000000000001
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.007999999999999998,
+                0.007999999999999998
+            ],
+            [
+                0.0046,
+                0.004600000000000001
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0048000000000000004,
+                0.0048000000000000004
+            ],
+            [
+                0.0035000000000000005,
+                0.0035000000000000005
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.013600000000000001,
+                0.013600000000000001
+            ],
+            [
+                0.012000000000000002,
+                0.012
+            ],
+            [
+                0.0038000000000000004,
+                0.003799999999999999
+            ],
+            [
+                0.0274,
+                0.0274
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0134,
+                0.0134
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.021000000000000005,
+                0.021000000000000005
+            ],
+            [
+                0.014600000000000002,
+                0.014600000000000002
+            ],
+            [
+                0.005000000000000001,
+                0.005000000000000001
+            ],
+            [
+                0.009999999999999998,
+                0.009999999999999998
+            ],
+            [
+                0.006,
+                0.006
+            ],
+            [
+                0.0046,
+                0.004600000000000001
+            ],
+            [
+                0.0044,
+                0.0044
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.027199999999999995,
+                0.027199999999999995
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0042,
+                0.004200000000000001
+            ],
+            [
+                0.013800000000000002,
+                0.013800000000000002
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0042,
+                0.004200000000000001
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.004999999999999999,
+                0.004999999999999999
+            ],
+            [
+                0.009200000000000002,
+                0.009200000000000002
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.012000000000000004,
+                0.012
+            ]
+        ],
+        "feature_names": [
+            "index",
+            "age",
+            "years_experience",
+            "years_location",
+            "weekday_hours",
+            "weekend_hours",
+            "total_inventory",
+            "monthly_purchases",
+            "daily_sales",
+            "monthly_revenue",
+            "total_employees",
+            "business_type",
+            "location_type",
+            "ownership_type",
+            "education_level",
+            "customer_segment",
+            "payment_methods",
+            "business_registration",
+            "target",
+            "age",
+            "years_experience",
+            "years_location",
+            "weekday_hours",
+            "weekend_hours",
+            "total_inventory",
+            "monthly_purchases",
+            "daily_sales",
+            "monthly_revenue",
+            "total_employees",
+            "business_type",
+            "location_type",
+            "ownership_type",
+            "education_level",
+            "customer_segment",
+            "payment_methods",
+            "business_registration",
+            "target",
+            "age + business_registration",
+            "age + business_type",
+            "age + customer_segment",
+            "age + daily_sales",
+            "age + education_level",
+            "age + location_type",
+            "age + monthly_purchases",
+            "age + monthly_revenue",
+            "age + ownership_type",
+            "age + payment_methods",
+            "age + target",
+            "age + total_employees",
+            "age + total_inventory",
+            "age + weekday_hours",
+            "age + weekend_hours",
+            "age + years_experience",
+            "age + years_location",
+            "business_registration + business_type",
+            "business_registration + customer_segment",
+            "business_registration + daily_sales",
+            "business_registration + education_level",
+            "business_registration + location_type",
+            "business_registration + monthly_purchases",
+            "business_registration + monthly_revenue",
+            "business_registration + ownership_type",
+            "business_registration + payment_methods",
+            "business_registration + target",
+            "business_registration + total_employees",
+            "business_registration + total_inventory",
+            "business_registration + weekday_hours",
+            "business_registration + weekend_hours",
+            "business_registration + years_experience"
+        ]
+    },
+    "lime": {
+        "feature_importance": {
+            "0.92 < business_registration + daily_sales <= 1.61": 0.03352414121366723,
+            "0.09 < age + daily_sales <= 1.19": 0.026785826262301703,
+            "-0.08 < monthly_revenue <= 0.61": 0.014570846888807044,
+            "age + business_type <= -0.18": -0.020785877364791344,
+            "1.00 < ownership_type <= 2.00": -0.01204069222892132,
+            "-0.74 < monthly_purchases <= -0.23": -0.003238116844984223,
+            "location_type <= 0.25": 0.002045715654756858,
+            "0.25 < business_registration <= 1.00": 0.0028173225699735112,
+            "0.92 < business_registration + monthly_revenue <= 1.61": 0.01251731772990207,
+            "0.00 < payment_methods <= 1.00": 0.008795424286633801,
+            "age + weekday_hours <= -1.27": -0.012191499357456883,
+            "-0.08 < daily_sales <= 0.61": 0.003610450638010359,
+            "age + weekend_hours <= -1.27": -0.010903216763339565,
+            "-0.92 < years_location <= -0.11": -0.004202918458963891,
+            "business_registration + weekday_hours <= -0.06": -0.010047402336954347,
+            "-0.77 < total_employees <= -0.27": 0.0031561785859057306,
+            "customer_segment > 1.75": -0.004105491919887855,
+            "age + customer_segment > 1.69": 0.008064508885873666,
+            "-1.53 < age + monthly_purchases <= -0.23": -0.0069484319713220615,
+            "-0.80 < age <= 0.00": -0.00441516481612255,
+            "0.25 < business_registration + target <= 1.00": 0.006554717824677416,
+            "-0.51 < business_registration + total_inventory <= 0.94": -0.006115413779872037,
+            "-0.76 < total_inventory <= -0.06": -0.00491416268246939,
+            "-0.80 < age + target <= 0.00": -0.005701130610674755,
+            "-0.49 < business_registration + monthly_purchases <= 0.77": 0.005324794312485052,
+            "-1.56 < age + total_inventory <= -0.06": -0.005205630821192313,
+            "-0.75 < years_experience <= -0.20": -0.002178788317028925,
+            "business_registration + customer_segment > 2.50": -0.003937008563428658,
+            "age + location_type <= 0.42": 0.0034487599884401214,
+            "weekend_hours <= -0.98": 0.001982348546914065,
+            "business_registration + business_type <= 1.00": -0.0024184237212257296,
+            "0.09 < age + monthly_revenue <= 1.19": -0.002250301010928769,
+            "business_registration + education_level <= 1.00": -0.0021093417239208,
+            "age + ownership_type > 1.45": 0.00202989054681879,
+            "business_registration + location_type <= 1.25": 0.0019081093759514389,
+            "education_level <= 0.25": -0.0006102753707904198,
+            "age + education_level <= 0.25": 0.0018426972276873379,
+            "business_type <= 0.00": 0.0011025166203499082,
+            "-1.56 < age + total_employees <= -0.27": -0.0015248618100833766,
+            "0.54 < age + payment_methods <= 0.84": -0.0013880802148395004,
+            "weekday_hours <= -0.98": 0.00017839374461431666,
+            "business_registration + weekend_hours <= -0.06": 0.0009540529446706291,
+            "-0.52 < business_registration + total_employees <= 0.73": -0.0008931703767814923,
+            "-1.55 < age + years_experience <= -0.20": -0.0008498883516055103,
+            "-0.55 < age + business_registration <= 1.00": -0.000840344695500606,
+            "-1.62 < age + years_location <= -0.29": -0.0008013404152684146,
+            "-0.50 < business_registration + years_experience <= 0.80": -0.0005916169382828864,
+            "index <= 2.25": 0.000378577140694234,
+            "business_registration + ownership_type > 2.00": -0.000136512986476486,
+            "1.00 < business_registration + payment_methods <= 2.00": 0.00013209540294460302,
+            "target <= 0.00": 0.0
+        },
+        "explained_instance_index": 0
+    }
+}

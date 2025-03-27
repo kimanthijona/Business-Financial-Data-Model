@@ -1,0 +1,44 @@
+2025-03-27 15:27:12,276 - src.data.data_ingestion - INFO - Qualified status distribution:
+qualified_status
+1    6
+0    4
+Name: count, dtype: int64
+2025-03-27 15:27:12,277 - src.data.data_ingestion - INFO - Data loaded successfully from D:\PesaJoy\Scoring\data/raw/survey_data.csv
+2025-03-27 15:27:12,277 - src.data.data_ingestion - INFO - Data shape: (10, 18)
+2025-03-27 15:27:12,279 - src.data.data_ingestion - INFO - Target variable info:
+count    10.000000
+mean      0.600000
+std       0.516398
+min       0.000000
+25%       0.000000
+50%       1.000000
+75%       1.000000
+max       1.000000
+Name: qualified_status, dtype: float64
+2025-03-27 15:27:12,286 - src.data.data_validation - INFO - Range validation completed for column age
+2025-03-27 15:27:12,288 - src.data.data_validation - INFO - Range validation completed for column years_experience
+2025-03-27 15:27:12,289 - src.data.data_validation - INFO - Range validation completed for column years_location
+2025-03-27 15:27:12,289 - src.data.data_validation - INFO - Range validation completed for column weekday_hours
+2025-03-27 15:27:12,290 - src.data.data_validation - INFO - Range validation completed for column weekend_hours
+2025-03-27 15:27:12,291 - src.data.data_validation - INFO - Range validation completed for column total_inventory
+2025-03-27 15:27:12,291 - src.data.data_validation - INFO - Range validation completed for column monthly_purchases
+2025-03-27 15:27:12,292 - src.data.data_validation - INFO - Range validation completed for column daily_sales
+2025-03-27 15:27:12,292 - src.data.data_validation - INFO - Range validation completed for column monthly_revenue
+2025-03-27 15:27:12,293 - src.data.data_validation - INFO - Range validation completed for column total_employees
+2025-03-27 15:27:12,293 - src.data.data_validation - INFO - Categorical validation completed for column business_type
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Categorical validation completed for column location_type
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Categorical validation completed for column ownership_type
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Categorical validation completed for column education_level
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Categorical validation completed for column customer_segment
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Categorical validation completed for column payment_methods
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Categorical validation completed for column business_registration
+2025-03-27 15:27:12,294 - src.data.data_validation - INFO - Data validation completed successfully
+2025-03-27 15:27:12,300 - src.data.data_transformation - INFO - Missing values handled successfully
+2025-03-27 15:27:12,304 - src.data.data_transformation - INFO - Scaled 10 numeric features
+2025-03-27 15:27:12,305 - src.data.data_transformation - INFO - Encoded categorical feature: business_type
+2025-03-27 15:27:12,305 - src.data.data_transformation - INFO - Encoded categorical feature: location_type
+2025-03-27 15:27:12,306 - src.data.data_transformation - INFO - Encoded categorical feature: ownership_type
+2025-03-27 15:27:12,306 - src.data.data_transformation - INFO - Encoded categorical feature: education_level
+2025-03-27 15:27:12,306 - src.data.data_transformation - INFO - Encoded categorical feature: customer_segment
+2025-03-27 15:27:12,307 - src.data.data_transformation - INFO - Encoded categorical feature: payment_methods
+2025-03-27 15:27:12,307 - src.data.data_transformation - INFO - Encoded categorical feature: business_registration

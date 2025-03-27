@@ -1,0 +1,41 @@
+2025-03-27 15:30:00,052 - __main__ - INFO - Starting ML pipeline
+2025-03-27 15:30:00,061 - __main__ - INFO - Configuration loaded successfully
+2025-03-27 15:30:00,062 - __main__ - INFO - Starting data ingestion
+2025-03-27 15:30:00,082 - __main__ - INFO - Data loaded successfully with shape: (10, 18)
+2025-03-27 15:30:00,082 - __main__ - INFO - Starting data validation
+2025-03-27 15:30:00,092 - __main__ - INFO - Data validation completed successfully
+2025-03-27 15:30:00,092 - __main__ - INFO - Starting data transformation
+2025-03-27 15:30:00,106 - __main__ - INFO - Data transformation completed successfully
+2025-03-27 15:30:00,106 - __main__ - INFO - Starting feature engineering
+2025-03-27 15:30:00,106 - __main__ - INFO - Creating target variable
+2025-03-27 15:30:00,107 - src.data.automated_feature_engineering - INFO - Target variable created successfully
+2025-03-27 15:30:00,108 - __main__ - INFO - Generating automated features
+2025-03-27 15:30:00,187 - src.data.automated_feature_engineering - INFO - Generated 50 features automatically
+2025-03-27 15:30:00,188 - __main__ - INFO - Generated 50 automated features
+2025-03-27 15:30:00,188 - __main__ - INFO - Combining original and automated features
+2025-03-27 15:30:00,189 - __main__ - INFO - Total number of features: 69
+2025-03-27 15:30:03,616 - src.data.automated_feature_engineering - INFO - Correlation matrix plot saved to d:\PesaJoy\Scoring\data/features\plots\correlation_matrix.png
+2025-03-27 15:30:03,618 - __main__ - INFO - Feature list saved to d:\PesaJoy\Scoring\data/features/feature_list.txt
+2025-03-27 15:30:03,618 - __main__ - INFO - Starting model training
+2025-03-27 15:30:16,776 - src.models.model_trainer - INFO - Best score: 0.9000
+2025-03-27 15:30:16,777 - src.models.model_trainer - INFO - Best parameters: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-03-27 15:30:16,783 - src.models.model_trainer - INFO - Model and feature list saved to d:\PesaJoy\Scoring\models/saved_models
+2025-03-27 15:30:16,785 - __main__ - INFO - Model training completed successfully
+2025-03-27 15:30:16,785 - __main__ - INFO - Generating model explanations
+2025-03-27 15:30:16,786 - __main__ - INFO - Generating SHAP explanations
+2025-03-27 15:30:17,339 - __main__ - INFO - Generating LIME explanations
+2025-03-27 15:30:17,548 - __main__ - INFO - Model explanations generated successfully
+2025-03-27 15:30:17,990 - __main__ - INFO - Feature importance plot saved successfully
+2025-03-27 15:30:17,990 - __main__ - INFO - Starting model evaluation
+2025-03-27 15:30:17,995 - src.models.model_evaluation - INFO - Model loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_model.pkl
+2025-03-27 15:30:17,995 - src.models.model_evaluation - INFO - Encoders loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_encoders.pkl
+2025-03-27 15:30:18,019 - src.models.model_evaluation - INFO - Performance metrics calculated successfully
+2025-03-27 15:30:18,178 - src.models.model_evaluation - INFO - Confusion matrix plot saved for random_forest
+2025-03-27 15:30:18,311 - src.models.model_evaluation - INFO - ROC curve plot saved for random_forest
+2025-03-27 15:30:18,335 - __main__ - INFO - Model evaluation completed successfully
+2025-03-27 15:30:18,335 - __main__ - INFO - Starting model prediction
+2025-03-27 15:30:18,339 - src.models.model_prediction - INFO - Model loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_model.pkl
+2025-03-27 15:30:18,340 - src.models.model_prediction - INFO - Encoders loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_encoders.pkl
+2025-03-27 15:30:18,341 - src.models.model_prediction - ERROR - Error preprocessing data: Feature list not loaded
+2025-03-27 15:30:18,341 - src.models.model_prediction - ERROR - Error making predictions: Failed to preprocess data: Feature list not loaded
+2025-03-27 15:30:18,341 - __main__ - ERROR - Error in ML pipeline: Failed to make predictions: Failed to preprocess data: Feature list not loaded

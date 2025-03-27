@@ -1,0 +1,183 @@
+data:
+  raw_data_path: "data/raw/survey_data.csv"
+  processed_data_path: "data/processed/"
+  features_path: "data/features/features.csv"
+  target_column: "qualified_status"
+
+model_config:
+  model_name: "random_forest"
+  parameters:
+    n_estimators: 100
+    max_depth: 5
+    min_samples_split: 2
+    min_samples_leaf: 1
+    max_features: "sqrt"
+    random_state: 42
+  grid_search_params:
+    n_estimators: [100, 200]
+    max_depth: [3, 5, 10]
+    min_samples_split: [2, 5]
+    min_samples_leaf: [1, 2]
+    max_features: ["sqrt", "log2"]
+  random_forest:
+    n_estimators: [100, 200, 300]
+    max_depth: [10, 20, 30, None]
+    min_samples_split: [2, 5, 10]
+    min_samples_leaf: [1, 2, 4]
+    max_features: ["sqrt", "log2", None]
+  logistic_regression:
+    C: [0.1, 1.0, 10.0]
+    max_iter: [1000]
+  gradient_boosting:
+    n_estimators: [100, 200]
+    learning_rate: [0.01, 0.1]
+    max_depth: [3, 5, 7]
+  neural_network:
+    hidden_layer_sizes: [(50,), (100,), (50, 50)]
+    activation: ["relu", "tanh"]
+    learning_rate_init: [0.001, 0.01]
+  svm:
+    C: [0.1, 1.0, 10.0]
+    kernel: ["rbf", "linear"]
+  decision_tree:
+    max_depth: [5, 10, 15]
+    min_samples_split: [2, 5, 10]
+  naive_bayes: {}
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 3
+  scoring: "accuracy"
+  n_jobs: -1
+
+paths:
+  model_save_path: "models/saved_models/"
+  evaluation_dir: "models/evaluation/"
+  feature_list_path: "data/features/feature_list.txt"
+  features_dir: "data/features/"
+  models_dir: "models/saved_models/"
+  predictions_dir: "models/predictions/"
+  logs_dir: "logs/"
+
+feature_engineering:
+  target_threshold: 100000
+  daily_sales_col: "daily_sales"
+  daily_sales_threshold: 100000
+  numeric_columns:
+    - age
+    - years_experience
+    - years_location
+    - weekday_hours
+    - weekend_hours
+    - total_inventory
+    - monthly_purchases
+    - daily_sales
+    - monthly_revenue
+    - total_employees
+  categorical_columns:
+    - business_type
+    - location_type
+    - ownership_type
+    - education_level
+    - customer_segment
+    - payment_methods
+    - business_registration
+
+data_transformation:
+  numeric_columns:
+    - age
+    - years_experience
+    - years_location
+    - weekday_hours
+    - weekend_hours
+    - total_inventory
+    - monthly_purchases
+    - daily_sales
+    - monthly_revenue
+    - total_employees
+  categorical_columns:
+    - business_type
+    - location_type
+    - ownership_type
+    - education_level
+    - customer_segment
+    - payment_methods
+    - business_registration
+  scaler: "standard"
+  encoder: "label"
+
+data_validation:
+  numeric_ranges:
+    age:
+      min: 18
+      max: 100
+    years_experience:
+      min: 0
+      max: 50
+    years_location:
+      min: 0
+      max: 50
+    weekday_hours:
+      min: 0
+      max: 24
+    weekend_hours:
+      min: 0
+      max: 24
+    total_inventory:
+      min: 0
+      max: 1000000
+    monthly_purchases:
+      min: 0
+      max: 1000000
+    daily_sales:
+      min: 0
+      max: 100000
+    monthly_revenue:
+      min: 0
+      max: 1000000
+    total_employees:
+      min: 0
+      max: 1000
+  categorical_values:
+    business_type:
+      - retail
+      - service
+      - wholesale
+    location_type:
+      - mall
+      - street
+      - standalone
+      - market
+    ownership_type:
+      - sole_proprietor
+      - partnership
+      - limited_company
+    education_level:
+      - certificate
+      - diploma
+      - bachelors
+      - masters
+      - phd
+    customer_segment:
+      - low_income
+      - middle_income
+      - high_income
+    payment_methods:
+      - cash_only
+      - cash_mobile
+      - all_methods
+    business_registration:
+      - registered
+      - not_registered
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - roc_auc
+  test_size: 0.2
+  random_state: 42
+  cross_validation: 5 

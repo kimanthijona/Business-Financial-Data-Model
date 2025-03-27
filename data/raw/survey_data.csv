@@ -1,0 +1,11 @@
+age,years_experience,years_location,weekday_hours,weekend_hours,total_inventory,monthly_purchases,daily_sales,monthly_revenue,total_employees,business_type,location_type,ownership_type,education_level,customer_segment,payment_methods,business_registration
+35,5,3,8,6,5000,2000,6000,180000,3,retail,mall,sole_proprietor,bachelors,middle_income,cash_mobile,registered
+28,2,2,10,8,3000,1500,4000,120000,2,service,street,partnership,diploma,low_income,cash_only,not_registered
+45,10,7,12,10,8000,3500,7500,225000,5,wholesale,standalone,limited_company,masters,high_income,all_methods,registered
+32,4,4,9,7,4000,1800,4800,144000,3,retail,market,sole_proprietor,certificate,middle_income,cash_mobile,registered
+40,8,6,11,9,6000,2500,5500,165000,4,service,mall,partnership,bachelors,high_income,all_methods,registered
+25,1,1,8,6,2000,1000,3000,90000,1,retail,street,sole_proprietor,diploma,low_income,cash_only,not_registered
+50,15,10,10,8,10000,4000,8000,240000,6,wholesale,standalone,limited_company,phd,high_income,all_methods,registered
+38,6,5,9,7,5500,2200,5200,156000,3,service,mall,partnership,bachelors,middle_income,cash_mobile,registered
+42,9,8,12,10,7000,3000,6500,195000,5,retail,market,limited_company,masters,high_income,all_methods,registered
+30,3,2,8,6,3500,1600,4200,126000,2,service,street,sole_proprietor,certificate,low_income,cash_only,not_registered 

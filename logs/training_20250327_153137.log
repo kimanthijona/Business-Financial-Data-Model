@@ -1,0 +1,85 @@
+2025-03-27 15:31:37,893 - __main__ - INFO - Starting ML pipeline
+2025-03-27 15:31:37,905 - __main__ - INFO - Configuration loaded successfully
+2025-03-27 15:31:37,906 - __main__ - INFO - Starting data ingestion
+2025-03-27 15:31:37,915 - src.data.data_ingestion - INFO - Qualified status distribution:
+qualified_status
+1    6
+0    4
+Name: count, dtype: int64
+2025-03-27 15:31:37,915 - src.data.data_ingestion - INFO - Data loaded successfully from d:\PesaJoy\Scoring\data/raw/survey_data.csv
+2025-03-27 15:31:37,916 - src.data.data_ingestion - INFO - Data shape: (10, 18)
+2025-03-27 15:31:37,918 - src.data.data_ingestion - INFO - Target variable info:
+count    10.000000
+mean      0.600000
+std       0.516398
+min       0.000000
+25%       0.000000
+50%       1.000000
+75%       1.000000
+max       1.000000
+Name: qualified_status, dtype: float64
+2025-03-27 15:31:37,920 - __main__ - INFO - Data loaded successfully with shape: (10, 18)
+2025-03-27 15:31:37,920 - __main__ - INFO - Starting data validation
+2025-03-27 15:31:37,924 - src.data.data_validation - INFO - Range validation completed for column age
+2025-03-27 15:31:37,925 - src.data.data_validation - INFO - Range validation completed for column years_experience
+2025-03-27 15:31:37,927 - src.data.data_validation - INFO - Range validation completed for column years_location
+2025-03-27 15:31:37,927 - src.data.data_validation - INFO - Range validation completed for column weekday_hours
+2025-03-27 15:31:37,928 - src.data.data_validation - INFO - Range validation completed for column weekend_hours
+2025-03-27 15:31:37,929 - src.data.data_validation - INFO - Range validation completed for column total_inventory
+2025-03-27 15:31:37,929 - src.data.data_validation - INFO - Range validation completed for column monthly_purchases
+2025-03-27 15:31:37,930 - src.data.data_validation - INFO - Range validation completed for column daily_sales
+2025-03-27 15:31:37,930 - src.data.data_validation - INFO - Range validation completed for column monthly_revenue
+2025-03-27 15:31:37,931 - src.data.data_validation - INFO - Range validation completed for column total_employees
+2025-03-27 15:31:37,931 - src.data.data_validation - INFO - Categorical validation completed for column business_type
+2025-03-27 15:31:37,931 - src.data.data_validation - INFO - Categorical validation completed for column location_type
+2025-03-27 15:31:37,931 - src.data.data_validation - INFO - Categorical validation completed for column ownership_type
+2025-03-27 15:31:37,932 - src.data.data_validation - INFO - Categorical validation completed for column education_level
+2025-03-27 15:31:37,932 - src.data.data_validation - INFO - Categorical validation completed for column customer_segment
+2025-03-27 15:31:37,932 - src.data.data_validation - INFO - Categorical validation completed for column payment_methods
+2025-03-27 15:31:37,932 - src.data.data_validation - INFO - Categorical validation completed for column business_registration
+2025-03-27 15:31:37,932 - src.data.data_validation - INFO - Data validation completed successfully
+2025-03-27 15:31:37,933 - __main__ - INFO - Data validation completed successfully
+2025-03-27 15:31:37,933 - __main__ - INFO - Starting data transformation
+2025-03-27 15:31:37,938 - src.data.data_transformation - INFO - Missing values handled successfully
+2025-03-27 15:31:37,941 - src.data.data_transformation - INFO - Scaled 10 numeric features
+2025-03-27 15:31:37,942 - src.data.data_transformation - INFO - Encoded categorical feature: business_type
+2025-03-27 15:31:37,942 - src.data.data_transformation - INFO - Encoded categorical feature: location_type
+2025-03-27 15:31:37,943 - src.data.data_transformation - INFO - Encoded categorical feature: ownership_type
+2025-03-27 15:31:37,943 - src.data.data_transformation - INFO - Encoded categorical feature: education_level
+2025-03-27 15:31:37,944 - src.data.data_transformation - INFO - Encoded categorical feature: customer_segment
+2025-03-27 15:31:37,944 - src.data.data_transformation - INFO - Encoded categorical feature: payment_methods
+2025-03-27 15:31:37,944 - src.data.data_transformation - INFO - Encoded categorical feature: business_registration
+2025-03-27 15:31:37,944 - __main__ - INFO - Data transformation completed successfully
+2025-03-27 15:31:37,945 - __main__ - INFO - Starting feature engineering
+2025-03-27 15:31:37,945 - __main__ - INFO - Creating target variable
+2025-03-27 15:31:37,945 - src.data.automated_feature_engineering - INFO - Target variable created successfully
+2025-03-27 15:31:37,946 - __main__ - INFO - Generating automated features
+2025-03-27 15:31:38,023 - src.data.automated_feature_engineering - INFO - Generated 50 features automatically
+2025-03-27 15:31:38,023 - __main__ - INFO - Generated 50 automated features
+2025-03-27 15:31:38,024 - __main__ - INFO - Combining original and automated features
+2025-03-27 15:31:38,025 - __main__ - INFO - Total number of features: 69
+2025-03-27 15:31:41,433 - src.data.automated_feature_engineering - INFO - Correlation matrix plot saved to d:\PesaJoy\Scoring\data/features\plots\correlation_matrix.png
+2025-03-27 15:31:41,433 - __main__ - INFO - Feature list saved to d:\PesaJoy\Scoring\data/features/feature_list.txt
+2025-03-27 15:31:41,434 - __main__ - INFO - Starting model training
+2025-03-27 15:31:55,604 - src.models.model_trainer - INFO - Best score: 0.9000
+2025-03-27 15:31:55,604 - src.models.model_trainer - INFO - Best parameters: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-03-27 15:31:55,612 - src.models.model_trainer - INFO - Model and feature list saved to d:\PesaJoy\Scoring\models/saved_models
+2025-03-27 15:31:55,612 - __main__ - INFO - Model training completed successfully
+2025-03-27 15:31:55,613 - __main__ - INFO - Generating model explanations
+2025-03-27 15:31:55,613 - __main__ - INFO - Generating SHAP explanations
+2025-03-27 15:31:56,249 - __main__ - INFO - Generating LIME explanations
+2025-03-27 15:31:56,468 - __main__ - INFO - Model explanations generated successfully
+2025-03-27 15:31:56,887 - __main__ - INFO - Feature importance plot saved successfully
+2025-03-27 15:31:56,888 - __main__ - INFO - Starting model evaluation
+2025-03-27 15:31:56,892 - src.models.model_evaluation - INFO - Model loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_model.pkl
+2025-03-27 15:31:56,893 - src.models.model_evaluation - INFO - Encoders loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_encoders.pkl
+2025-03-27 15:31:56,919 - src.models.model_evaluation - INFO - Performance metrics calculated successfully
+2025-03-27 15:31:57,093 - src.models.model_evaluation - INFO - Confusion matrix plot saved for random_forest
+2025-03-27 15:31:57,240 - src.models.model_evaluation - INFO - ROC curve plot saved for random_forest
+2025-03-27 15:31:57,266 - __main__ - INFO - Model evaluation completed successfully
+2025-03-27 15:31:57,266 - __main__ - INFO - Starting model prediction
+2025-03-27 15:31:57,272 - src.models.model_prediction - INFO - Model loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_model.pkl
+2025-03-27 15:31:57,272 - src.models.model_prediction - INFO - Encoders loaded successfully from d:\PesaJoy\Scoring\models/saved_models\random_forest_encoders.pkl
+2025-03-27 15:31:57,274 - src.models.model_prediction - ERROR - Error preprocessing data: Feature list not loaded
+2025-03-27 15:31:57,274 - src.models.model_prediction - ERROR - Error making predictions: Failed to preprocess data: Feature list not loaded
+2025-03-27 15:31:57,274 - __main__ - ERROR - Error in ML pipeline: Failed to make predictions: Failed to preprocess data: Feature list not loaded

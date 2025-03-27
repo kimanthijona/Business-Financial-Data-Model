@@ -1,0 +1,4 @@
+prediction,probability,original_age,original_years_experience,original_years_location,original_weekday_hours,original_weekend_hours,original_total_inventory,original_monthly_purchases,original_daily_sales,original_monthly_revenue,original_total_employees,original_business_type,original_location_type,original_ownership_type,original_education_level,original_customer_segment,original_payment_methods,original_business_registration
+1,0.71,35,5,3,8,6,5000,2000,6000,180000,3,retail,mall,sole_proprietor,bachelors,middle_income,cash_mobile,registered
+0,0.05,28,2,2,10,8,3000,1500,4000,120000,2,service,street,partnership,diploma,low_income,cash_only,not_registered
+1,1.0,45,10,7,12,10,8000,3500,7500,225000,5,wholesale,standalone,limited_company,masters,high_income,all_methods,registered
