@@ -1,22 +1,22 @@
 ## Business Financial Data Model
 
-🚀 Overview
+**Overview**
 
 Welcome to the Business Financial Data Model! This project is all about predicting the likelihood of small retail businesses repaying their loans. We use self-declared financial data collected via KoboToolbox surveys, focusing on daily sales and revenue as key indicators.
 
-🔄 How It Works
+**How It Works**
 
 We take raw business survey data and transform it into insights using machine learning. Here's the flow:
 
-📥 Data Ingestion – Collecting raw survey data.
+1. Data Ingestion – Collecting raw survey data.
 
-🛠️ Data Cleaning & Validation – Handling missing values and ensuring consistency.
+2. Data Cleaning & Validation – Handling missing values and ensuring consistency.
 
-📊 Feature Engineering – Extracting meaningful business indicators.
+3. Feature Engineering – Extracting meaningful business indicators.
 
-🤖 Model Training & Evaluation – Building and testing predictive models.
+4. Model Training & Evaluation – Building and testing predictive models.
 
-📈 Prediction – Estimating loan repayment probability based on daily revenue.
+5. Prediction – Estimating loan repayment probability based on daily revenue.
 
 **Installation & Setup**
 
@@ -34,7 +34,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 
-📜 Key Libraries Used
+**Key Libraries Used**
 
 Pandas 
 
@@ -46,7 +46,7 @@ XGBoost
 
 Matplotlib & Seaborn 
 
-▶️ Running the Model
+**Running the Model**
 
 Prepare Your Data – Place survey_data.csv in data/raw/.
 
@@ -62,21 +62,21 @@ Target Variable: Probability of loan repayment.
 
 **Key Features:**
 
-Daily sales & revenue trends 📈
+Daily sales & revenue trends 
 
-Business operational data 🏪
+Business operational data 
 
-Other financial indicators 💰
+Other financial indicators 
 
 **Techniques Used:**
 
-Logistic Regression 🤖
+Logistic Regression 
 
-Random Forest 🌲
+Random Forest 
 
-XGBoost ⚡
+XGBoost 
 
-Hyperparameter tuning 🎛️
+Hyperparameter tuning 
 
 **License**
 
